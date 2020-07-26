@@ -1,0 +1,32 @@
+Have a seperate file for testing
+
+always start the file with with "test_xxx.py"
+
+import unittest module
+
+create a class, inherit from unittest.TestCase
+
+have a method in the class starting with "test_xxxx"
+
+use this link for all the TestCase assert methods: 
+https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug
+
+run the actual test by this command line function:
+
+python -m unittest test_calc.py
+
+you can also add a block of code to the end of your test module to make it run directly when you run the module file
+
+dont write as many as possible, just write GOOD tests. Quality > Quantity
+
+TESTS DO NOT RUN IN ORDER
+
+Setup and teardown run before/after every single test
+setupClass and tearDownClass run once before/after all tests
+
+
+Mocking, if you are testing a response, and you dont want to rely on actually getting a response
+from an actual API, you can "mock" a response with the input
+
+Tests shouldnt rely on other tests
+
